@@ -14,7 +14,7 @@ const Search = () => {
   const [searchItem, setSearchItem] = useState('');
 
   const getUserData = async () => {
-    const response = await axios.get("http://localhost:5000/api/users");
+    const response = await axios.get("https://heliverse-assignment-ipit.onrender.com/api/users");
     const userData = response.data;
     setUsers(userData);
     setFilteredUsers(userData);
